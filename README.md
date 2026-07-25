@@ -43,23 +43,28 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-
+![Alt text](img/outputcatfile1.png)
 
 cat < file2
 ## OUTPUT
 
+![Alt text](img/outputcatfile2.png)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
  
+![Alt text](img/CMPfile.png)
+
 comm file1 file2
  ## OUTPUT
 
- 
+ ![Alt text](img/COMMfile.png)
+
 diff file1 file2
 ## OUTPUT
 
+![Alt text](img/difffile1.png)
 
 #Filters
 
