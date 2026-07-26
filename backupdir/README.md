@@ -241,81 +241,79 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-![Alt text](img/2.png)
+
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-![Alt text](img/3.png)
+
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-![Alt text](img/4.png)
+
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-![Alt text](img/5.png)
+
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-![Alt text](img/6.png)
+
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-![Alt text](img/7.png)
+
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-![Alt text](img/8.png)
+
+
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-![Alt text](img/9.png)
+
 
 seq 10 
 ## OUTPUT
 
-![Alt text](img/10.png)
+
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-![Alt text](img/11.png)
+
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-![Alt text](img/12.png)
+
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-![Alt text](img/13.png)
+
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-![Alt text](img/14.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
-![Alt text](img/15.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-![Alt text](img/16.png)
+
 
 sed -n '2,4{s/$/*/;p}' file23
 
-![Alt text](img/24.png)
 
 #Sorting File content
 cat > file21
@@ -329,7 +327,6 @@ cat > file21
 sort file21
 ## OUTPUT
 
-![Alt text](img/18.png)
 
 cat > file22
 ```
@@ -343,14 +340,12 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-![Alt text](img/19.png)
+
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
- ![Alt text](img/20.png)
 
 cat < urllist.txt
 ```
@@ -368,18 +363,17 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-![Alt text](img/21.png)
+
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
-![Alt text](img/22.png)
+
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
 
-![Alt text](img/23.png)
 
 mkdir backupdir
  
@@ -390,25 +384,19 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-![Alt text](img/tar-tvf.png)
 
 tar -xvf backup.tar
 ## OUTPUT
-
-![Alt text](img/tar-xvf.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-
-![Alt text](img/ls-gz.png)
  
 gunzip backup.tar.gz
 ## OUTPUT
 
- ![Alt text](img/gunzip.png)
-
+ 
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
