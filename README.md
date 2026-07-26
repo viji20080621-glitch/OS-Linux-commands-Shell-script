@@ -527,13 +527,14 @@ fi
 ```
 ##OUTPUT
 
-
+![Alt text](img/strcomp.png)
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
 
+![Alt text](img/strcomp-sh.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -560,6 +561,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+
+![Alt text](img/psswdperm.png)
 
 # check if with file location
 cat>ifnested.sh 
